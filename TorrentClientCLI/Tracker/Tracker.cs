@@ -10,11 +10,36 @@ namespace TorrentClientCLI.Tracker
     {
         protected bool isHandshaken { get; set; }
         protected string addr { get; }
+        protected int port { get; }
         protected ActiveTorrent torrent{ get; }
 
         public Tracker(string addr, ActiveTorrent torrent)
         {
+            string[] t0 = addr.Split(':');
             this.addr = addr;
+
+            if (addr.StartsWith("udp"))
+            {
+                string tempPort = "";
+                if (t0.Length == 2)
+                {
+                    this.addr = t0[0];
+                    tempPort = t0[1];
+                }
+                else if (t0.Length == 3)
+                {
+                    this.addr = t0[0] + ":" + t0[1];
+                    tempPort = t0[2];
+                }
+                if (tempPort.Contains('/'))
+                {
+                    string[] t1 = tempPort.Split("/".ToArray(), 2);
+                    this.port = Convert.ToInt32(t1[0]);
+                    this.addr += "/" + t1[1];
+                }
+                else this.port = Convert.ToInt32(tempPort);
+            }
+
             this.isHandshaken = false;
             this.torrent = torrent;
         }

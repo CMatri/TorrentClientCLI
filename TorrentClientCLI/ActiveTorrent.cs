@@ -44,7 +44,13 @@ namespace TorrentClientCLI
             List<string> trackers = new List<string>();
             var keys = torrent.ToBDictionary();
             var announce = keys["announce"];
-            connectionManager.Add(trackerManager.RequestPeersFromTrackers((BList) keys["announce-list"]));
+            var announceList = (BList)keys["announce-list"];
+            if (announceList == null && announce != null)
+                connectionManager.Add(trackerManager.RequestPeersFromTracker(announce.ToString()));
+            else if (announce != null)
+                connectionManager.Add(trackerManager.RequestPeersFromTrackers(announceList));
+            else
+                Console.WriteLine("Failed to download - invalid tracker data.");
         }      
 
         private string RandomID()

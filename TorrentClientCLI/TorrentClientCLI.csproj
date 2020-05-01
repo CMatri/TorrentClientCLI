@@ -58,7 +58,9 @@
     <Compile Include="Tracker\Http\HttpTracker.cs" />
     <Compile Include="Tracker\Tracker.cs" />
     <Compile Include="Tracker\TrackerManager.cs" />
+    <Compile Include="Tracker\Udp\Pack.cs" />
     <Compile Include="Tracker\Udp\UdpTracker.cs" />
+    <Compile Include="Tracker\Udp\Unpack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

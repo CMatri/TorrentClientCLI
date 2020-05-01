@@ -12,7 +12,7 @@ namespace TorrentClientCLI
 
         public Program()
         {
-            fileName = "C:\\Users\\Connor\\Downloads\\haywyre.torrent";
+            fileName = "C:\\Users\\Connor\\Downloads\\bunny.torrent";
             activeTorrent = new ActiveTorrent(fileName);
             activeTorrent.StartDownload();
             Console.ReadLine();
