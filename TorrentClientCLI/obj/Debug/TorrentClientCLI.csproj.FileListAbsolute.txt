@@ -1,0 +1,10 @@
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\bin\Debug\TorrentClientCLI.exe.config
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\bin\Debug\TorrentClientCLI.exe
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\bin\Debug\TorrentClientCLI.pdb
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\bin\Debug\BencodeNET.dll
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\bin\Debug\BencodeNET.xml
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\obj\Debug\TorrentClientCLI.csprojAssemblyReference.cache
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\obj\Debug\TorrentClientCLI.csproj.CoreCompileInputs.cache
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\obj\Debug\TorrentClientCLI.csproj.CopyComplete
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\obj\Debug\TorrentClientCLI.exe
+D:\Programming\C#\TorrentClientCLI\TorrentClientCLI\TorrentClientCLI\obj\Debug\TorrentClientCLI.pdb
